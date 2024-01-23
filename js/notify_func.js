@@ -22,5 +22,5 @@
                  exit: 'animated bounceOutDown'
              },
          });
-     }, 5000); // change the start delay
+     }, 500); // change the start delay
  });
