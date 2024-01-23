@@ -1,10 +1,11 @@
+.tour_description p{
+	padding-left: 10px;
+	padding-right: 10px;
+		padding-bottom: 10px;
+}
 html,body{
 	
-	.tour_description p{
-padding-left: 10px;
-padding-right: 10px;
-	padding-bottom: 10px;
-}
+	
 
 
 	
