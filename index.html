@@ -562,10 +562,10 @@
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script defer src="js/common_scripts_min.js"></script>
-    <script defer src="js/functions.js"></script>
+    <!-- <script defer src="js/functions.js"></script> -->
     <script>jQuery(".left-imgbox").theiaStickySidebar({ additionalMarginTop: 80 }), jQuery(".right-imgbox").theiaStickySidebar({ additionalMarginTop: 80 })</script>
-    <script async defer src="js/notify_func.js"></script>
-    <script async defer src="js/jquery.cookiebar.js"></script>
+    <!-- <script defer src="js/notify_func.js"></script> -->
+    <script defer src="js/jquery.cookiebar.js"></script>
     <script>$(document).ready(function () { "use strict"; $.cookieBar({ fixed: !0 }) })</script>
     <script async defer src="https://www.googletagmanager.com/gtag/js?id=UA-17468101-1"></script>
     <script>function gtag() { dataLayer.push(arguments) } window.dataLayer = window.dataLayer || [], gtag("js", new Date), gtag("config", "UA-17468101-1")</script>
@@ -576,6 +576,13 @@
             stylesheet.rel = 'stylesheet';
             stylesheet.href = 'css/vendors.css';
             document.head.appendChild(stylesheet);
+            const notify = document.createElement('script')
+            notify.src = 'js/notify_func.js';
+            document.body.appendChild(notify)
+            const site_function = document.createElement('script')
+            site_function.src = 'js/functions.js';
+            document.body.appendChild(site_function)
+
         };
     </script>
 </body>
