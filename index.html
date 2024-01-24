@@ -122,7 +122,7 @@
             </div>
         </div>
     </header>
-    <section id="hero" class="background-image" >
+    <section id="hero" class="background-image">
         <div class="opacity-mask" data-opacity-mask="rgba(0, 0, 0, 0)">
             <div class="intro_title">
                 <h3 class="animated fadeInDown">Pink Umbrella Tours Experiences and Corporate Events</h3>
@@ -572,18 +572,20 @@
     <script>!function (e, t, n) { var s, o = e.getElementsByTagName(t)[0]; e.getElementById(n) || ((s = e.createElement(t)).id = n, s.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=1365407963556488", s.setAttribute('defer'), o.parentNode.insertBefore(s, o)) }(document, "script", "facebook-jssdk")</script>
     <script>
         window.onload = function () {
-            console.log('loaded complete')
-            var mainStyle = document.createElement('link');
-            mainStyle.rel = 'stylesheet';
-            mainStyle.href = 'css/style.css';
-            document.head.appendChild(mainStyle);
-            var stylesheet = document.createElement('link');
-            stylesheet.rel = 'stylesheet';
-            stylesheet.href = 'css/vendors.css';
-            document.head.appendChild(stylesheet)
-            const notify = document.createElement('script')
-            notify.src = 'js/notify_func.js';
-            document.body.appendChild(notify)
+            setTimeout(() => {
+                console.log('loaded complete')
+                var mainStyle = document.createElement('link');
+                mainStyle.rel = 'stylesheet';
+                mainStyle.href = 'css/style.css';
+                document.head.appendChild(mainStyle);
+                var stylesheet = document.createElement('link');
+                stylesheet.rel = 'stylesheet';
+                stylesheet.href = 'css/vendors.css';
+                document.head.appendChild(stylesheet)
+                const notify = document.createElement('script')
+                notify.src = 'js/notify_func.js';
+                document.body.appendChild(notify)
+            }, 500)
 
         };
     </script>
