@@ -25,7 +25,7 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"
         async>
     <link rel="stylesheet" href="css/style.css">
-    <link href="css/home/home.css" rel="stylesheet">
+    <!-- <link href="css/home/home.css" rel="stylesheet"> -->
     <!-- <link rel="stylesheet" href="css/vendors.css"> -->
 </head>
 
@@ -570,6 +570,14 @@
     <script async defer src="https://www.googletagmanager.com/gtag/js?id=UA-17468101-1"></script>
     <script>function gtag() { dataLayer.push(arguments) } window.dataLayer = window.dataLayer || [], gtag("js", new Date), gtag("config", "UA-17468101-1")</script>
     <script>!function (e, t, n) { var s, o = e.getElementsByTagName(t)[0]; e.getElementById(n) || ((s = e.createElement(t)).id = n, s.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=1365407963556488", s.setAttribute("defer"), o.parentNode.insertBefore(s, o)) }(document, "script", "facebook-jssdk")</script>
+    <script>
+        window.onload = function () {
+            var stylesheet = document.createElement('link');
+            stylesheet.rel = 'stylesheet';
+            stylesheet.href = 'css/vendors.css';
+            document.head.appendChild(stylesheet);
+        };
+    </script>
 </body>
 
 </html>
