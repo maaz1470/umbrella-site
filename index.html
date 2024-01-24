@@ -600,7 +600,7 @@
         <script defer src="js/jquery.cookiebar.js"></script>
         <script>$(document).ready(function () { "use strict"; $.cookieBar({ fixed: !0 }) })</script>
         <script>function gtag() { dataLayer.push(arguments) } window.dataLayer = window.dataLayer || [], gtag("js", new Date), gtag("config", "UA-17468101-1")</script>
-        <script>!function (e, t, n) { var s, o = e.getElementsByTagName(t)[0]; e.getElementById(n) || ((s = e.createElement(t)).id = n, s.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=1365407963556488", s.setAttribute('defer'), o.parentNode.insertBefore(s, o)) }(document, "script", "facebook-jssdk")</script>
+        <script></script>
 
     <!-- <script defer src="https://www.googletagmanager.com/gtag/js?id=UA-17468101-1"></script> -->
     <script>
@@ -610,40 +610,47 @@
             const temp_data = document.getElementById('body').innerHTML
             document.getElementById('body').innerHTML = '';
             setTimeout(() => {
-                const mainStyle = document.createElement('link')
-                mainStyle.rel = 'stylesheet'
+
+                // Main Css
+                const mainStyle = document.createElement('link');
+                mainStyle.rel = 'stylesheet';
                 mainStyle.href = 'css/style.css';
-                document.head.appendChild(mainStyle)
-            },2900)
+                document.head.appendChild(mainStyle);
+
+            },2900);
             setTimeout(() => {
                 // Google Font Load
                 var gFont = document.createElement('link');
                 gFont.rel = 'stylesheet';
                 gFont.href = 'https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Montserrat:wght@300;400;500;600;700&display=swap';
-                document.head.appendChild(gFont)
+                document.head.appendChild(gFont);
                 
                 // Vendor Css Load Here
                 var stylesheet = document.createElement('link');
                 stylesheet.rel = 'stylesheet';
                 stylesheet.href = 'css/vendors.css';
-                document.head.appendChild(stylesheet)
+                document.head.appendChild(stylesheet);
 
                 // Notify Css Load Here
-                const notify = document.createElement('script')
+                const notify = document.createElement('script');
                 notify.src = 'js/notify_func.js';
-                document.body.appendChild(notify)
+                document.body.appendChild(notify);
 
                 // Google Analytics Load Here
-                const gtag = document.createElement('script')
+                const gtag = document.createElement('script');
                 gtag.src = 'https://www.googletagmanager.com/gtag/js?id=UA-17468101-1';
-                document.body.appendChild(gtag)
+                document.body.appendChild(gtag);
 
                 // Loading
                 loader.style.display = 'none';
 
                 // Content
-                document.getElementById('body').innerHTML = temp_data
-            }, 3000)
+                document.getElementById('body').innerHTML = temp_data;
+            }, 3000);
+
+            setTimeout(() => {
+                !function (e, t, n) { var s, o = e.getElementsByTagName(t)[0]; e.getElementById(n) || ((s = e.createElement(t)).id = n, s.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=1365407963556488", s.setAttribute('defer',null), o.parentNode.insertBefore(s, o)) }(document, "script", "facebook-jssdk")
+            },5000)
         };
     </script>
 </body>
