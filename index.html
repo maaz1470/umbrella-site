@@ -40,15 +40,17 @@
 
                 
 
-                // Loading
-                loader.style.display = 'none';
-
                 jQuery(".left-imgbox").theiaStickySidebar({ additionalMarginTop: 80 }), jQuery(".right-imgbox").theiaStickySidebar({ additionalMarginTop: 80 })
 
-            }, 50);
+            }, 100);
+
 
             setTimeout(() => {
 
+
+                // Loading
+                loader.style.display = 'none';
+                
                 // Google Font Load
                 var gFont = document.createElement('link');
                 gFont.rel = 'stylesheet';
