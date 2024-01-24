@@ -24,7 +24,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"
         async>
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/preload.css">
     <!-- <link href="css/home/home.css" rel="stylesheet"> -->
     <!-- <link rel="stylesheet" href="css/vendors.css"> -->
 </head>
@@ -609,21 +610,38 @@
             const temp_data = document.getElementById('body').innerHTML
             document.getElementById('body').innerHTML = '';
             setTimeout(() => {
+                const mainStyle = document.createElement('link')
+                mainStyle.rel = 'stylesheet'
+                mainStyle.href = 'css/style.css';
+                document.head.appendChild(mainStyle)
+            },2900)
+            setTimeout(() => {
+                // Google Font Load
                 var gFont = document.createElement('link');
                 gFont.rel = 'stylesheet';
                 gFont.href = 'https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Montserrat:wght@300;400;500;600;700&display=swap';
                 document.head.appendChild(gFont)
+                
+                // Vendor Css Load Here
                 var stylesheet = document.createElement('link');
                 stylesheet.rel = 'stylesheet';
                 stylesheet.href = 'css/vendors.css';
                 document.head.appendChild(stylesheet)
+
+                // Notify Css Load Here
                 const notify = document.createElement('script')
                 notify.src = 'js/notify_func.js';
                 document.body.appendChild(notify)
+
+                // Google Analytics Load Here
                 const gtag = document.createElement('script')
                 gtag.src = 'https://www.googletagmanager.com/gtag/js?id=UA-17468101-1';
                 document.body.appendChild(gtag)
+
+                // Loading
                 loader.style.display = 'none';
+
+                // Content
                 document.getElementById('body').innerHTML = temp_data
             }, 3000)
         };
