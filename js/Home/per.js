@@ -58,9 +58,9 @@ const loader = document.getElementById('preloader')
 
 
                 // Google Analytics Load Here
-                const gtag = document.createElement('script');
-                gtag.src = 'https://www.googletagmanager.com/gtag/js?id=UA-17468101-1';
-                document.body.appendChild(gtag);
+                const googleTag = document.createElement('script');
+                googleTag.src = 'https://www.googletagmanager.com/gtag/js?id=UA-17468101-1';
+                document.body.appendChild(googleTag);
 
                 // Google Gtag Activation
                 function gtag() { dataLayer.push(arguments) } window.dataLayer = window.dataLayer || [], gtag("js", new Date), gtag("config", "UA-17468101-1")
