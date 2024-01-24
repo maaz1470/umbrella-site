@@ -16,11 +16,6 @@
                 // Content
                 document.getElementById('body').innerHTML = temp_data;
 
-                // Google Font Load
-                var gFont = document.createElement('link');
-                gFont.rel = 'stylesheet';
-                gFont.href = 'https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Montserrat:wght@300;400;500;600;700&display=swap';
-                document.head.appendChild(gFont);
 
                 // Vendor Css Load Here
                 var stylesheet = document.createElement('link');
@@ -43,19 +38,28 @@
                 script_function.src = 'js/functions.js';
                 document.body.appendChild(script_function);
 
-                // Google Analytics Load Here
-                const gtag = document.createElement('script');
-                gtag.src = 'https://www.googletagmanager.com/gtag/js?id=UA-17468101-1';
-                document.body.appendChild(gtag);
+                
 
                 // Loading
                 loader.style.display = 'none';
 
                 jQuery(".left-imgbox").theiaStickySidebar({ additionalMarginTop: 80 }), jQuery(".right-imgbox").theiaStickySidebar({ additionalMarginTop: 80 })
 
-            }, 10);
+            }, 50);
 
-            
+            setTimeout(() => {
+
+                // Google Font Load
+                var gFont = document.createElement('link');
+                gFont.rel = 'stylesheet';
+                gFont.href = 'https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Montserrat:wght@300;400;500;600;700&display=swap';
+                document.head.appendChild(gFont);
+
+                // Google Analytics Load Here
+                const gtag = document.createElement('script');
+                gtag.src = 'https://www.googletagmanager.com/gtag/js?id=UA-17468101-1';
+                document.body.appendChild(gtag);
+            },400)
 
             setTimeout(() => {
                 !function (e, t, n) { var s, o = e.getElementsByTagName(t)[0]; e.getElementById(n) || ((s = e.createElement(t)).id = n, s.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=1365407963556488", s.setAttribute('defer', null), o.parentNode.insertBefore(s, o)) }(document, "script", "facebook-jssdk")
