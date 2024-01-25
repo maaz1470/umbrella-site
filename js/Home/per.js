@@ -11,7 +11,7 @@ const loader = document.getElementById('preloader')
                 mainStyle.href = 'css/style.css';
                 document.head.appendChild(mainStyle);
 
-            }, 2900);
+            }, 2800);
             setTimeout(() => {
 
 
@@ -45,7 +45,7 @@ const loader = document.getElementById('preloader')
 
                 jQuery(".left-imgbox").theiaStickySidebar({ additionalMarginTop: 80 }), jQuery(".right-imgbox").theiaStickySidebar({ additionalMarginTop: 80 })
 
-            }, 3000);
+            }, 2900);
 
             setTimeout(() => {
 
