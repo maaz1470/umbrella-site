@@ -55,8 +55,6 @@ const loader = document.getElementById('preloader')
                 gFont.href = 'https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Montserrat:wght@300;400;500;600;700&display=swap';
                 document.head.appendChild(gFont);
 
-
-
                 // Google Analytics Load Here
                 const googleTag = document.createElement('script');
                 googleTag.src = 'https://www.googletagmanager.com/gtag/js?id=UA-17468101-1';
