@@ -67,10 +67,17 @@ const loader = document.getElementById('preloader')
                 document.body.appendChild(map);
 
 
-                // Map JS
+                // InfoBox JS
                 const infoBox = document.createElement('script');
                 infoBox.src = 'js/infobox.js';
                 document.body.appendChild(infoBox);
+
+
+                // Google Recaptcha JS
+                const recaptcha = document.createElement('script');
+                recaptcha.src = 'https://www.google.com/recaptcha/api.js';
+                document.body.appendChild(recaptcha);
+
 
                 // Google Analytics Load Here
                 const googleTag = document.createElement('script');
