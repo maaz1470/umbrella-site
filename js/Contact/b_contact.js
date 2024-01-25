@@ -55,19 +55,30 @@ const loader = document.getElementById('preloader')
                 gFont.href = 'https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Montserrat:wght@300;400;500;600;700&display=swap';
                 document.head.appendChild(gFont);
 
+
+
                 // Google Analytics Load Here
-                const gtag = document.createElement('script');
-                gtag.src = 'https://www.googletagmanager.com/gtag/js?id=UA-17468101-1';
-                document.body.appendChild(gtag);
+                const googleTag = document.createElement('script');
+                googleTag.src = 'https://www.googletagmanager.com/gtag/js?id=UA-17468101-1';
+                document.body.appendChild(googleTag);
+
+                // Google Gtag Activation
+                function gtag() { dataLayer.push(arguments) } window.dataLayer = window.dataLayer || [], gtag("js", new Date), gtag("config", "UA-17468101-1")
 
             }, 6000)
 
             setTimeout(() => {
+
+
                 // Recaptcha
                 const recaptcha = document.createElement('script');
                 recaptcha.src = 'https://www.google.com/recaptcha/api.js';
                 document.head.appendChild(recaptcha);
 
+
+                $(document).ready(function () { $(".btn_1").click(function (e) { console.log(grecaptcha.getResponse()), "" == grecaptcha.getResponse() && (e.preventDefault(), alert("Please fill all fields correctly. ")) }) })
+
+
                 !function (e, t, n) { var s, o = e.getElementsByTagName(t)[0]; e.getElementById(n) || ((s = e.createElement(t)).id = n, s.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=1365407963556488", s.setAttribute('defer', null), o.parentNode.insertBefore(s, o)) }(document, "script", "facebook-jssdk")
-            }, 10000)
+            }, 7000)
         };
