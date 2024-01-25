@@ -6,10 +6,10 @@ const loader = document.getElementById('preloader')
             setTimeout(() => {
 
                 // Main Css
-                const mainStyle = document.createElement('link');
-                mainStyle.rel = 'stylesheet';
-                mainStyle.href = 'css/style.css';
-                document.head.appendChild(mainStyle);
+                // const mainStyle = document.createElement('link');
+                // mainStyle.rel = 'stylesheet';
+                // mainStyle.href = 'css/style.css';
+                // document.head.appendChild(mainStyle);
 
             }, 2900);
             setTimeout(() => {
@@ -35,9 +35,9 @@ const loader = document.getElementById('preloader')
                 document.body.appendChild(sticky);
 
                 // function js Load Here
-                const script_function = document.createElement('script');
-                script_function.src = 'js/functions.js';
-                document.body.appendChild(script_function);
+                // const script_function = document.createElement('script');
+                // script_function.src = 'js/functions.js';
+                // document.body.appendChild(script_function);
 
 
                 // Loading
