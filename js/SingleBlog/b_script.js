@@ -56,6 +56,21 @@ const loader = document.getElementById('preloader')
                 document.head.appendChild(gFont);
 
 
+                // Google Map
+                const gMap = document.createElement('script');
+                gMap.src = 'https://maps.googleapis.com/maps/api/js';
+                document.body.appendChild(gMap);
+
+                // Map JS
+                const map = document.createElement('script');
+                map.src = 'js/map.js';
+                document.body.appendChild(map);
+
+
+                // Map JS
+                const infoBox = document.createElement('script');
+                infoBox.src = 'js/infobox.js';
+                document.body.appendChild(infoBox);
 
                 // Google Analytics Load Here
                 const googleTag = document.createElement('script');
