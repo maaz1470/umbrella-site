@@ -9,6 +9,11 @@ const loader = document.getElementById('preloader')
             mainStyle.href = 'css/style.css';
             document.head.appendChild(mainStyle);
 
+            // Common Script Load Here
+            const c_script = document.createElement('script');
+            c_script.src = 'js/common_scripts_min.js';
+            document.body.appendChild(c_script);
+
             setTimeout(() => {
 
 
