@@ -3,15 +3,12 @@ const loader = document.getElementById('preloader')
         window.onload = function () {
             // const temp_data = document.getElementById('body').innerHTML
             // document.getElementById('body').innerHTML = '';
-            setTimeout(() => {
-
-                // Main Css
-                const mainStyle = document.createElement('link');
-                mainStyle.rel = 'stylesheet';
-                mainStyle.href = 'css/style.css';
-                document.head.appendChild(mainStyle);
-
-            }, 10);
+            // Main Css
+            const mainStyle = document.createElement('link');
+            mainStyle.rel = 'stylesheet';
+            mainStyle.href = 'css/style.css';
+            document.head.appendChild(mainStyle);
+            
             setTimeout(() => {
 
 
