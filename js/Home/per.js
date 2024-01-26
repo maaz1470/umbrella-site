@@ -4,10 +4,10 @@ const loader = document.getElementById('preloader')
             // const temp_data = document.getElementById('body').innerHTML
             // document.getElementById('body').innerHTML = '';
             // Main Css
-            const mainStyle = document.createElement('link');
-            mainStyle.rel = 'stylesheet';
-            mainStyle.href = 'css/style.css';
-            document.head.appendChild(mainStyle);
+            // const mainStyle = document.createElement('link');
+            // mainStyle.rel = 'stylesheet';
+            // mainStyle.href = 'css/style.css';
+            // document.head.appendChild(mainStyle);
 
             
 
