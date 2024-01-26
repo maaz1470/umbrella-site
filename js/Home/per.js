@@ -8,7 +8,7 @@ const loader = document.getElementById('preloader')
             mainStyle.rel = 'stylesheet';
             mainStyle.href = 'css/style.css';
             document.head.appendChild(mainStyle);
-            
+
             setTimeout(() => {
 
 
@@ -42,7 +42,7 @@ const loader = document.getElementById('preloader')
 
                 jQuery(".left-imgbox").theiaStickySidebar({ additionalMarginTop: 80 }), jQuery(".right-imgbox").theiaStickySidebar({ additionalMarginTop: 80 })
 
-            }, 2900);
+            }, 3000);
 
             setTimeout(() => {
 
