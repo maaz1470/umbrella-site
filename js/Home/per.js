@@ -1,8 +1,8 @@
 const loader = document.getElementById('preloader')
 
         window.onload = function () {
-            const temp_data = document.getElementById('body').innerHTML
-            document.getElementById('body').innerHTML = '';
+            // const temp_data = document.getElementById('body').innerHTML
+            // document.getElementById('body').innerHTML = '';
             setTimeout(() => {
 
                 // Main Css
@@ -27,7 +27,7 @@ const loader = document.getElementById('preloader')
                 document.body.appendChild(notify);
 
                 // Content
-                document.getElementById('body').innerHTML = temp_data;
+                // document.getElementById('body').innerHTML = temp_data;
 
                 // Stiky js Load Here
                 const sticky = document.createElement('script');
@@ -41,7 +41,7 @@ const loader = document.getElementById('preloader')
 
 
                 // Loading
-                loader.style.display = 'none';
+                // loader.style.display = 'none';
 
                 jQuery(".left-imgbox").theiaStickySidebar({ additionalMarginTop: 80 }), jQuery(".right-imgbox").theiaStickySidebar({ additionalMarginTop: 80 })
 
