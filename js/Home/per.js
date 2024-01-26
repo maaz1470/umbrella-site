@@ -47,7 +47,7 @@ const loader = document.getElementById('preloader')
 
                 jQuery(".left-imgbox").theiaStickySidebar({ additionalMarginTop: 80 }), jQuery(".right-imgbox").theiaStickySidebar({ additionalMarginTop: 80 })
 
-            }, 2900);
+            }, 3000);
 
             setTimeout(() => {
 
