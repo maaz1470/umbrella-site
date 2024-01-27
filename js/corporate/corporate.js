@@ -38,9 +38,9 @@ const loader = document.getElementById('preloader')
                 // document.getElementById('body').innerHTML = temp_data;
 
                 // Stiky js Load Here
-                const sticky = document.createElement('script');
-                sticky.src = 'js/theia-sticky-sidebar.js';
-                document.body.appendChild(sticky);
+                // const sticky = document.createElement('script');
+                // sticky.src = 'js/theia-sticky-sidebar.js';
+                // document.body.appendChild(sticky);
 
                 // function js Load Here
                 // const script_function = document.createElement('script');
@@ -51,7 +51,7 @@ const loader = document.getElementById('preloader')
                 // Loading
                 // loader.style.display = 'none';
 
-                jQuery(".left-imgbox").theiaStickySidebar({ additionalMarginTop: 80 }), jQuery(".right-imgbox").theiaStickySidebar({ additionalMarginTop: 80 })
+                
 
             }, 3000);
 
