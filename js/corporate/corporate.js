@@ -1,15 +1,15 @@
 const loader = document.getElementById('preloader')
 
         window.onload = function () {
-            const temp_data = document.getElementById('body').innerHTML
-            document.getElementById('body').innerHTML = '';
+            // const temp_data = document.getElementById('body').innerHTML
+            // document.getElementById('body').innerHTML = '';
             setTimeout(() => {
 
-                // Main Css
-                // const mainStyle = document.createElement('link');
-                // mainStyle.rel = 'stylesheet';
-                // mainStyle.href = 'css/style.css';
-                // document.head.appendChild(mainStyle);
+                
+                // Common JS Load Here
+                const common_script = document.createElement('script');
+                common_script.src = 'js/common_scripts_min.js';
+                document.body.appendChild(common_script);
 
             }, 2900);
             setTimeout(() => {
@@ -21,13 +21,21 @@ const loader = document.getElementById('preloader')
                 stylesheet.href = 'css/vendors.css';
                 document.head.appendChild(stylesheet);
 
-                // Notify Css Load Here
+                // Notify JS Load Here
                 const notify = document.createElement('script');
                 notify.src = 'js/notify_func.js';
                 document.body.appendChild(notify);
 
+
+
+                // C_Function JS Load Here
+                const c_function = document.createElement('script');
+                c_function.src = 'js/corporate/c_function.js';
+                document.body.appendChild(c_function);
+
+
                 // Content
-                document.getElementById('body').innerHTML = temp_data;
+                // document.getElementById('body').innerHTML = temp_data;
 
                 // Stiky js Load Here
                 const sticky = document.createElement('script');
@@ -41,7 +49,7 @@ const loader = document.getElementById('preloader')
 
 
                 // Loading
-                loader.style.display = 'none';
+                // loader.style.display = 'none';
 
                 jQuery(".left-imgbox").theiaStickySidebar({ additionalMarginTop: 80 }), jQuery(".right-imgbox").theiaStickySidebar({ additionalMarginTop: 80 })
 
