@@ -18,9 +18,6 @@ window.onload = function () {
 
     setTimeout(() => {
 
-
-
-
         // Vendor Css Load Here
         var stylesheet = document.createElement('link');
         stylesheet.rel = 'stylesheet';
