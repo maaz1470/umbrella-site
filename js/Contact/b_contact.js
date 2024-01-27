@@ -1,15 +1,15 @@
 const loader = document.getElementById('preloader')
 
         window.onload = function () {
-            const temp_data = document.getElementById('body').innerHTML
-            document.getElementById('body').innerHTML = '';
+            // const temp_data = document.getElementById('body').innerHTML
+            // document.getElementById('body').innerHTML = '';
             setTimeout(() => {
 
                 // Main Css
-                const mainStyle = document.createElement('link');
-                mainStyle.rel = 'stylesheet';
-                mainStyle.href = 'css/style.css';
-                document.head.appendChild(mainStyle);
+                // const mainStyle = document.createElement('link');
+                // mainStyle.rel = 'stylesheet';
+                // mainStyle.href = 'css/style.css';
+                // document.head.appendChild(mainStyle);
 
             }, 2900);
             setTimeout(() => {
@@ -27,7 +27,7 @@ const loader = document.getElementById('preloader')
                 document.body.appendChild(notify);
 
                 // Content
-                document.getElementById('body').innerHTML = temp_data;
+                // document.getElementById('body').innerHTML = temp_data;
 
                 // Stiky js Load Here
                 const sticky = document.createElement('script');
