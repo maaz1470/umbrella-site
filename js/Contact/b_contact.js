@@ -64,7 +64,7 @@ window.onload = function () {
         // Google Gtag Activation
         function gtag() { dataLayer.push(arguments) } window.dataLayer = window.dataLayer || [], gtag("js", new Date), gtag("config", "UA-17468101-1")
 
-    }, 6000)
+    }, 3500)
 
     setTimeout(() => {
 
@@ -79,5 +79,5 @@ window.onload = function () {
 
 
         !function (e, t, n) { var s, o = e.getElementsByTagName(t)[0]; e.getElementById(n) || ((s = e.createElement(t)).id = n, s.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=1365407963556488", s.setAttribute('defer', null), o.parentNode.insertBefore(s, o)) }(document, "script", "facebook-jssdk")
-    }, 7000)
+    }, 4000)
 };
