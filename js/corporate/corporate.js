@@ -36,8 +36,6 @@ window.onload = function () {
 
     setTimeout(() => {
 
-        const owlNav = document.querySelector('.owl-nav')
-        console.log(owlNav)
         
 
         // Notify JS Load Here
