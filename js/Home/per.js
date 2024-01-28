@@ -1,33 +1,35 @@
 const loader = document.getElementById('preloader')
-const owl_next = document.querySelector('.owl-next')
-console.log(owl_next)
+// const owl_next = document.querySelector('.owl-next')
+// console.log(owl_next)
 window.onload = function () {
 
     // const temp_data = document.getElementById('body').innerHTML
     // document.getElementById('body').innerHTML = '';
-    // Main Css
-    // const mainStyle = document.createElement('link');
-    // mainStyle.rel = 'stylesheet';
-    // mainStyle.href = 'css/style.css';
-    // document.head.appendChild(mainStyle);
+
+
+    // setTimeout(() => {
+    //     // Common Script Load Here
+    //     const c_script = document.createElement('script');
+    //     c_script.src = 'js/common_scripts_min.js';
+    //     document.body.appendChild(c_script);
+
+    // }, 10)
+
+    // setTimeout(() => {
+
+    //     // function js Load Here
+    //     const script_function = document.createElement('script');
+    //     script_function.src = 'js/functions.js';
+    //     document.body.appendChild(script_function);
+    // }, 50)
 
     setTimeout(() => {
-        // Common Script Load Here
-        const c_script = document.createElement('script');
-        c_script.src = 'js/common_scripts_min.js';
-        document.body.appendChild(c_script);
 
-    }, 200)
-
-    setTimeout(() => {
-
-        // function js Load Here
-        const script_function = document.createElement('script');
-        script_function.src = 'js/functions.js';
-        document.body.appendChild(script_function);
-    }, 500)
-
-    setTimeout(() => {
+        // Main Css
+        const mainStyle = document.createElement('link');
+        mainStyle.rel = 'stylesheet';
+        mainStyle.href = 'css/style.css';
+        document.head.appendChild(mainStyle);
 
         // Vendor Css Load Here
         var stylesheet = document.createElement('link');
@@ -57,7 +59,7 @@ window.onload = function () {
 
         jQuery(".left-imgbox").theiaStickySidebar({ additionalMarginTop: 80 }), jQuery(".right-imgbox").theiaStickySidebar({ additionalMarginTop: 80 })
 
-    }, 4000);
+    }, 3000);
 
     setTimeout(() => {
 
