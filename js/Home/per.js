@@ -15,7 +15,7 @@ window.onload = function () {
         c_script.src = 'js/common_scripts_min.js';
         document.body.appendChild(c_script);
 
-    }, 500)
+    }, 200)
 
     setTimeout(() => {
 
@@ -23,7 +23,7 @@ window.onload = function () {
         const script_function = document.createElement('script');
         script_function.src = 'js/functions.js';
         document.body.appendChild(script_function);
-    },1000)
+    },500)
 
     setTimeout(() => {
 
