@@ -23,6 +23,13 @@ window.onload = function () {
         document.body.appendChild(c_function);
 
 
+        // Vendor Css Load Here
+        var stylesheet = document.createElement('link');
+        stylesheet.rel = 'stylesheet';
+        stylesheet.href = 'css/vendors.css';
+        document.head.appendChild(stylesheet);
+
+
         
 
     }, 500)
@@ -31,11 +38,7 @@ window.onload = function () {
 
         const owlNav = document.querySelector('.owl-nav')
         console.log(owlNav)
-        // Vendor Css Load Here
-        var stylesheet = document.createElement('link');
-        stylesheet.rel = 'stylesheet';
-        stylesheet.href = 'css/vendors.css';
-        document.head.appendChild(stylesheet);
+        
 
         // Notify JS Load Here
         const notify = document.createElement('script');
