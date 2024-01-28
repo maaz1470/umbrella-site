@@ -57,7 +57,7 @@ window.onload = function () {
 
         jQuery(".left-imgbox").theiaStickySidebar({ additionalMarginTop: 80 }), jQuery(".right-imgbox").theiaStickySidebar({ additionalMarginTop: 80 })
 
-    }, 3200);
+    }, 3500);
 
     setTimeout(() => {
 
