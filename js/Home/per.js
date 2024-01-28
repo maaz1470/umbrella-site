@@ -57,7 +57,7 @@ window.onload = function () {
 
         jQuery(".left-imgbox").theiaStickySidebar({ additionalMarginTop: 80 }), jQuery(".right-imgbox").theiaStickySidebar({ additionalMarginTop: 80 })
 
-    }, 3500);
+    }, 4000);
 
     setTimeout(() => {
 
@@ -67,7 +67,7 @@ window.onload = function () {
         gFont.href = 'https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Montserrat:wght@300;400;500;600;700&display=swap';
         document.head.appendChild(gFont);
 
-    }, 4000)
+    }, 4200)
 
     setTimeout(() => {
 
