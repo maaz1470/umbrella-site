@@ -12,7 +12,7 @@ window.onload = function () {
         common_script.src = 'js/common_scripts_min.js';
         document.body.appendChild(common_script);
 
-    }, 200);
+    }, 100);
 
     setTimeout(() => {
 
@@ -32,7 +32,7 @@ window.onload = function () {
 
         
 
-    }, 500)
+    }, 300)
 
     setTimeout(() => {
 
