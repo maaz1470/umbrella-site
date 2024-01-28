@@ -7,21 +7,21 @@ window.onload = function () {
     // document.getElementById('body').innerHTML = '';
 
 
-    setTimeout(() => {
-        // Common Script Load Here
-        const c_script = document.createElement('script');
-        c_script.src = 'js/common_scripts_min.js';
-        document.body.appendChild(c_script);
+    // setTimeout(() => {
+    //     // Common Script Load Here
+    //     const c_script = document.createElement('script');
+    //     c_script.src = 'js/common_scripts_min.js';
+    //     document.body.appendChild(c_script);
 
-    }, 2000)
+    // }, 2000)
 
-    setTimeout(() => {
+    // setTimeout(() => {
 
-        // function js Load Here
-        const script_function = document.createElement('script');
-        script_function.src = 'js/functions.js';
-        document.body.appendChild(script_function);
-    }, 3000)
+    //     // function js Load Here
+    //     const script_function = document.createElement('script');
+    //     script_function.src = 'js/functions.js';
+    //     document.body.appendChild(script_function);
+    // }, 3000)
 
     setTimeout(() => {
 
