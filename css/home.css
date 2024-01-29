@@ -45,3 +45,17 @@ html,body{
 
 	
 	-webkit-font-smoothing:antialiased;-moz-font-smoothing:antialiased;-o-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}body{background:#f9f9f9;font-size:18px;line-height:1.5;font-family:"Montserrat",Arial,sans-serif;color:#333;font-weight:400}.main-menu{position:relative;z-index:9;width:auto}.layer{position:fixed;top:0;left:0;width:100%;min-width:100%;z-index:100;min-height:100%;background-color:#000;z-index:99;background-color:rgba(0,0,0,0.8);-webkit-transition:transform .3s ease 0s,opacity .3s ease 0s,visibility 0 ease .3s;-moz-transition:transform .3s ease 0s,opacity .3s ease 0s,visibility 0 ease .3s;-ms-transition:transform .3s ease 0s,opacity .3s ease 0s,visibility 0 ease .3s;-o-transition:transform .3s ease 0s,opacity .3s ease 0s,visibility 0 ease .3s;transition:transform .3s ease 0s,opacity .3s ease 0s,visibility 0 ease .3s;opacity:0;visibility:hidden}.layer-is-visible{opacity:1;visibility:visible;-webkit-transition:opacity .3s ease 0s,transform .3s ease 0;-moz-transition:opacity .3s ease 0s,transform .3s ease 0;-ms-transition:opacity .3s ease 0s,transform .3s ease 0;-o-transition:opacity .3s ease 0s,transform .3s ease 0;transition:opacity .3s ease 0s,transform .3s ease 0}@media only screen and (min-width: 992px){.main-menu{width:auto}}@media only screen and (max-width: 991px){.main-menu{overflow:auto;transform:translateX(-105%);top:0;left:0;bottom:0;width:55%;height:100%;position:fixed;background-color:#fff;z-index:999999;-webkit-box-shadow:1px 0 5px 0 rgba(50,50,50,0.55);-moz-box-shadow:1px 0 5px 0 rgba(50,50,50,0.55);box-shadow:1px 0 5px 0 rgba(50,50,50,0.55);-webkit-transition:all .5s cubic-bezier(0.77,0,0.175,1);-moz-transition:all .5s cubic-bezier(0.77,0,0.175,1);-ms-transition:all .5s cubic-bezier(0.77,0,0.175,1);-o-transition:all .5s cubic-bezier(0.77,0,0.175,1);transition:all .5s cubic-bezier(0.77,0,0.175,1)}.main-menu.show{transform:translateX(0)}}@media only screen and (max-width: 480px){.main-menu{width:100%}}@media( min-width: 768px ){body{overflow-x:hidden!important}}
+
+    html,body{
+	
+	
+
+
+	
+	-webkit-font-smoothing:antialiased;-moz-font-smoothing:antialiased;-o-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}body{background:#f9f9f9;font-size:18px;line-height:1.5;font-family:"Montserrat",Arial,sans-serif;color:#333;font-weight:400}#toTop{position:fixed;right:0;opacity:0;visibility:hidden;bottom:25px;margin:0 25px 0 0;z-index:9999;transition:.35s;transform:scale(0.7);width:46px;height:46px;background-color:rgba(0,0,0,.6);opacity:1;transition:all .3s;border-radius:50%;text-align:center;font-size:21px;color:#fff;cursor:pointer}#toTop.visible{opacity:1;visibility:visible;transform:scale(1)}#toTop:after{content:"\e899";font-family:"fontello";position:relative;display:block;top:50%;-webkit-transform:translateY(-55%);transform:translateY(-55%)}@media( min-width: 768px ){body{overflow-x:hidden!important}}
+
+
+	a.show-submenu-mega + .menu-wrapper.show_mega, .main-menu a.show-submenu + ul.show_normal {
+		display: block;
+		visibility: visible;
+	}
