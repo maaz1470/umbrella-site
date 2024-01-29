@@ -3,24 +3,9 @@ const loader = document.getElementById('preloader')
 window.onload = function () {
     // const temp_data = document.getElementById('body').innerHTML
     // document.getElementById('body').innerHTML = '';
-    setTimeout(() => {
-
-
-
-        // Common JS Load Here
-        const common_script = document.createElement('script');
-        common_script.src = 'js/common_scripts_min.js';
-        document.body.appendChild(common_script);
-
-    }, 100);
 
     setTimeout(() => {
 
-
-        // C_Function JS Load Here
-        const c_function = document.createElement('script');
-        c_function.src = 'js/corporate/c_function.js';
-        document.body.appendChild(c_function);
 
 
         // Vendor Css Load Here
@@ -32,7 +17,7 @@ window.onload = function () {
 
         
 
-    }, 4000)
+    }, 5000)
 
     setTimeout(() => {
 
