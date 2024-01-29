@@ -26,16 +26,16 @@ window.onload = function () {
     setTimeout(() => {
 
         // Main Css
-        // const mainStyle = document.createElement('link');
-        // mainStyle.rel = 'stylesheet';
-        // mainStyle.href = 'css/style.css';
-        // document.head.appendChild(mainStyle);
+        const mainStyle = document.createElement('link');
+        mainStyle.rel = 'stylesheet';
+        mainStyle.href = 'css/style.css';
+        document.head.appendChild(mainStyle);
 
-        // // Vendor Css Load Here
-        // var stylesheet = document.createElement('link');
-        // stylesheet.rel = 'stylesheet';
-        // stylesheet.href = 'css/vendors.css';
-        // document.head.appendChild(stylesheet);
+        // Vendor Css Load Here
+        var stylesheet = document.createElement('link');
+        stylesheet.rel = 'stylesheet';
+        stylesheet.href = 'css/vendors.css';
+        document.head.appendChild(stylesheet);
 
         // Notify Css Load Here
         const notify = document.createElement('script');
@@ -51,15 +51,12 @@ window.onload = function () {
         document.body.appendChild(sticky);
 
 
-
-
-
         // Loading
         // loader.style.display = 'none';
 
         jQuery(".left-imgbox").theiaStickySidebar({ additionalMarginTop: 80 }), jQuery(".right-imgbox").theiaStickySidebar({ additionalMarginTop: 80 })
 
-    }, 3000);
+    }, 4000);
 
     setTimeout(() => {
 
