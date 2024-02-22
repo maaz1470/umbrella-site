@@ -4,6 +4,7 @@ window.addEventListener('load', function () {
     const head = this.document.head;
     const body = this.document.body;
 
+
     function facadesLoad() {
 
         // CSS Load Here
@@ -88,7 +89,6 @@ window.addEventListener('load', function () {
                 lazyFacadesLoad();
             }
         }else if(this.window.scrollY > 300){
-            console.log(this.window.scrollY)
             if(!this.window.rh_vendor){
                 this.window.rh_vendor = true;
                 vendorCssLoad();
