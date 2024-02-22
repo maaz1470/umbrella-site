@@ -72,16 +72,37 @@ window.addEventListener('load', function () {
         }, 1000)
     }
 
+    function vendorCssLoad(){
+        const vendor = document.createElement('link')
+        vendor.href = 'css/vendors.css';
+        vendor.type = 'text/css'
+        vendor.rel = 'stylesheet'
+        head.appendChild(vendor)
+    }
+
     this.window.addEventListener('scroll', function () {
-        console.log(this.window.scrollY)
         if (this.window.scrollY > 1000) {
             if (!window.rh) {
                 window.rh = true;
                 facadesLoad();
                 lazyFacadesLoad();
             }
+        }else if(this.window.scrollY > 300){
+            console.log(this.window.scrollY)
+            if(!this.window.rh_vendor){
+                this.window.rh_vendor = true;
+                vendorCssLoad();
+            }
         }
     })
+
+
+    this.setTimeout(() => {
+        const google_font = this.document.createElement('link')
+        google_font.rel = 'stylesheet'
+        google_font.href = 'https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Montserrat:wght@300;400;500;600;700&display=swap'
+        head.appendChild(google_font)
+    },6000)
 
 
 
